@@ -1,8 +1,9 @@
 import React from "react";
 import Link from "next/link";
+import "../src/components/styles.module.css";
 
 const Page = () => (
-  <div>
+  <div className="test">
     <h1>Index page</h1>
 
     <Link href="/notes">
