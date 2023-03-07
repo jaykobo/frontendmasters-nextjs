@@ -4,7 +4,6 @@ import Link from "next/link";
 
 const Page = () => {
   const router = useRouter();
-  const id = 2;
 
   const notes = new Array(15)
     .fill(1)
