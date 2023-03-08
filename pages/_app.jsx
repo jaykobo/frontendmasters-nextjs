@@ -1,13 +1,16 @@
-import React from "react";
+/** @jsx jsx */
+import { jsx } from "theme-ui";
+import { ThemeProvider } from "theme-ui";
+import theme from "../theme";
+import Nav from "../src/components/nav";
 
 export default function App({ Component, pageProps }) {
   return (
-    <div>
-      <p>header</p>
-
-      <Component {...pageProps} />
-
-      <p>footer</p>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div>
+        <Nav />
+        <Component {...pageProps} />
+      </div>
+    </ThemeProvider>
   );
 }
