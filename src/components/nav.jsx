@@ -31,17 +31,12 @@ const Nav = () => (
         <a sx={{ color: "text", fontSize: 3, cursor: "pointer" }}>notes</a>
       </Link>
 
-      <a
-        sx={{
-          color: "text",
-          fontSize: 3,
-          cursor: "pointer",
-        }}
+      {/* <a
         href={process.env.HELP_APP_URL}
-        target="_blank"
+        sx={{ color: "text", fontSize: 3, cursor: "pointer" }}
       >
         Help
-      </a>
+      </a> */}
     </nav>
   </header>
 );
